@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML formas</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Dati par Jums</legend>
+
+        
+<!--  -->
+        <div>
+            <label for="name">Jūsu vards:</label><br>
+            <input type="text" name="name" id="name" required maxlength="" minlength="5">
+        </div>
+        <div>
+            <label for="email">Jūsu epasts:</label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="birthdate">Jūsu dzimšanas datums:</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <div>
+            <label for="profile_image">Profila bilde:</label><br>
+            <input type="file" name="profile_image" id="profile_image">
+        </div>
+        <div>
+            <h3>Cik daudz laika pavadāt pie datora</h3>
+            
+            <input type="radio" name="question" id="var1" value="1">
+            <label for="var1">Mazāk par stundu</label><br>
+
+            <input type="radio" name="question" id="var2" value="2">
+            <label for="var2">2-3 stundas</label><br>
+
+            <input type="radio" name="question" id="var3" value="3">
+            <label for="var3">3 līdz 6 stundas</label>
+
+        </div>
+
+        <div>
+            <h3>Jūsu miļakā automašīna</h3>
+
+            <select name="fav_car" id="fav_car">
+                <option value=""></option>
+                <option value="BMW">BMW</option>
+                <option value="Ford" selected>Ford</option>
+                <option value="Opel">Opel</option>
+                <option value="Mercedes">Mercedes</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="bio">Nedaudz par sevi:</label><br>
+            <textarea name="bio" id="bio" placeholder="Kada ir jūsu profesija? Kāds ir jūsu hobbijs?"></textarea>
+        </div>
+    </fieldset>
+        <!--  -->
+    <fieldset>
+        <legend>Jūsu profila parole</legend>
+        <div>
+            <label for="password">Ierakstiet paroli:</label><br>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="password_repeat">Atkārtojiet paroli:</label><br>
+            <input type="password" name="password_repeat" id="password_repeat" required>
+        </div>
+        <div>
+            <input type="checkbox" name="agree" id="agree" value="true" checked>
+            <label for="agree">Piekrītu portāla <a href="#">lietošanas noteikumiem!</a></label>    
+        </div>
+        <div>
+
+        </div>
+    </fieldset>
+
+
+    <!-- <input type="submit" value="Izveidot kontu"> -->
+
+    <button type="submit">Izveidot kontu</button>
+    </form>
+
+
+    <h1>Google search</h1>
+
+    <form action="https://google.com/search">
+        <input type="text" name="q" id="" placeholder="Ieraksti frāzi">
+        <button type="submit">Meklēt</button>
+    </form>
+</body>
+
+</html>
