@@ -1,0 +1,91 @@
+body{
+    background-color: burlywood;
+}
+
+*{
+    margin: 0px;
+}
+
+div.title {
+    width:50%;
+    height:100px;
+    margin:40px;
+    margin:40px 80px;
+    margin:40px 80px 80px 30px;
+    /* Komentārs */
+
+    margin-top:150px;
+
+    margin: 50px auto;
+
+
+    border: 5px solid red;
+    /* border-top: 1px dotted green;
+    border-bottom-style: double;
+    border-radius: 20px; */
+
+    padding:20px;
+
+    outline:2px solid black;
+
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    /* box-shadow: 20px 15px 20px 0px rgb(0, 0, 0); */
+
+}
+
+
+    p{
+        width:75%;
+        background-color: white;
+        padding: 20px;
+        margin: 20px auto;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.503);
+    }
+
+    .main_title{
+        text-align: center;
+        color:red;
+    }
+
+    .sub_title{
+        text-align: center;
+        color:green; 
+    }
+    .title{
+        margin:70px 50px;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .no_margin{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+
+    /* Navigācija */
+
+
+    nav{
+        height: 50px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+
+    }   
+
+  nav  a{
+        color:white;
+        align-content: space-around;
+    }
+
+
+    table *{
+        border:1px solid black
+    }
