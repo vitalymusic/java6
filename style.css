@@ -1,20 +1,24 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
     background-color: burlywood;
 }
 
-*{
+* {
     margin: 0px;
 }
 
 div.title {
-    width:50%;
-    height:100px;
-    margin:40px;
-    margin:40px 80px;
-    margin:40px 80px 80px 30px;
+    width: 50%;
+    height: 100px;
+    margin: 40px;
+    margin: 40px 80px;
+    margin: 40px 80px 80px 30px;
     /* Komentārs */
 
-    margin-top:150px;
+    margin-top: 150px;
 
     margin: 50px auto;
 
@@ -24,9 +28,9 @@ div.title {
     border-bottom-style: double;
     border-radius: 20px; */
 
-    padding:20px;
+    padding: 20px;
 
-    outline:2px solid black;
+    outline: 2px solid black;
 
     box-shadow: 0px 0px 30px rgb(0, 0, 0);
     /* box-shadow: 20px 15px 20px 0px rgb(0, 0, 0); */
@@ -34,58 +38,334 @@ div.title {
 }
 
 
-    p{
-        width:75%;
-        background-color: white;
-        padding: 20px;
-        margin: 20px auto;
-        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.503);
+p {
+    width: 75%;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.503);
+}
+
+.main_title {
+    text-align: center;
+    color: red;
+}
+
+.sub_title {
+    text-align: center;
+    color: green;
+}
+
+.title {
+    margin: 70px 50px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.no_margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* Navigācija */
+
+
+nav {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav a {
+    color: white;
+    align-content: space-around;
+}
+
+
+table * {
+    border: 1px solid black
+}
+
+div #h1 {}
+
+.selected {
+    color: red;
+}
+
+
+
+/* Teksta noformēšana */
+
+html {
+    font-family: sans-serif;
+}
+
+h1,
+h2 {
+    font-family: fantasy;
+}
+
+/* fontu imports */
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 14pt;
+}
+
+.main_title {
+    font-family: "Alex Brush", cursive;
+    font-size: 3em;
+    text-transform: lowercase;
+
+}
+
+p {
+    text-indent: 30px;
+}
+
+.sub_title {
+    font-size: 1.5em;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.412);
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
+/* Foni  */
+
+body {
+    background-image:
+        linear-gradient(45deg, rgb(119, 119, 255) 1%, rgb(238, 9, 9) 80%, rgb(28, 208, 15));
+
+    background: rgb(195, 34, 34);
+    background: linear-gradient(52deg, rgba(195, 34, 34, 1) 0%, rgba(80, 192, 60, 1) 24%, rgba(191, 93, 174, 1) 59%, rgba(253, 187, 45, 1) 100%);
+
+
+    /* background-image: url('./css3-512.webp'); */
+    background-size: contain;
+    /* background-size: cover; */
+    /* background-size: 100% 100%; */
+    background-attachment: fixed;
+    background-position: 0px 50px;
+}
+
+
+
+/* Pseido klases */
+
+
+nav a:hover{
+    color:red;
+    font-size: 1.2em;
+}
+table tr:hover{
+    background-color: burlywood;
+}
+
+/* Pseido elementi */
+h2::before{
+    content:"***";
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    border-bottom: 2px solid red;
+
+}
+
+
+
+p::first-letter{
+    font-size: 2em;
+    color:red;
+    font-weight: 700;
+}
+
+
+
+input[type="text"]{
+    background-color: black;
+    color:white;
+    font-size: 1em;
+    padding: 5px 5px;
+}
+input[type="password"]{
+    background-color: aqua;   
+    font-size: 1em;
+    padding: 5px 5px;   
+}
+
+[href="#top"]{
+    padding: 20px;
+    background-color: brown;
+    color:white;
+    display: inline-block;
+}
+
+/* Bloku pozicionēšana */
+
+
+
+.box{
+   
+
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    color:white;
+    position:static;
+
+    position:relative;
+    /* top:100px;
+    left:-100px; */
+
+
+    position: absolute;
+    
+
+
+    position:fixed;
+    bottom:-200px;
+    right:20px;
+    transition: all .3s;
+
+}
+
+.box:hover{
+    bottom:20px;
+    transition: all .5s;
+}
+
+nav{
+    position: sticky;
+    top:0px;
+    z-index: 20;
+}
+
+/* Elementu noņemšana */
+
+
+h2::before{
+    display: none;
+}
+
+
+.title{
+    position: relative;
+    overflow: hidden;
+}
+
+.title img{
+    width: 268px;
+    position: absolute;
+    top:-115px;
+    left:50px;
+    opacity: .3;
+    transform: scale(.7) rotate(-15deg);
+
+
+}
+
+nav a{
+    transition: all .5s;
+    position:relative;
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+nav a:hover{
+    /* transform: scale(1.4); */
+    transform:translateY(-4px);
+    transition: all .5s;
+}
+
+
+/* Animācijas */
+
+
+@keyframes animacija1 {
+    0%{
+        color:green;
+        transform: rotate(-10deg) translateY(-20px);
     }
 
-    .main_title{
-        text-align: center;
-        color:red;
+    25%{
+        color:rgb(5, 74, 224);
+        transform: rotate(-180deg) translateY(0px);
+    }
+    50%{
+        color:rgb(251, 11, 155);
+        transform: rotate(-90deg) translateY(-20px);
+
+    }
+    75%{
+        color:rgb(128, 98, 0);
+        transform: rotate(0deg);
     }
 
-    .sub_title{
-        text-align: center;
-        color:green; 
+    100%{
+        color:yellow;
+        transform: rotate(180deg) translateY(20px);
     }
-    .title{
-        margin:70px 50px;
+}
 
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+h1{
+    animation: animacija1 10s infinite linear;
+    animation-direction: alternate-reverse;
+}
+
+img{
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* Adaptīvais dizains */
+
+
+@media screen and (max-width:750px){
+    body{
+        background: aquamarine;
     }
-    .no_margin{
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-
-    /* Navigācija */
-
 
     nav{
-        height: 50px;
-        background-color: black;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-around;
-        align-items: center;
-
-    }   
-
-  nav  a{
-        color:white;
-        align-content: space-around;
+        flex-direction: column;
+        height:auto;
+        padding-bottom: 15px;
     }
 
 
-    table *{
-        border:1px solid black
+    .box{
+        width: 150px;
+        height: 150px;
+        bottom: -127px;
+        right: 8px;
     }
+
+
+
+
+}
